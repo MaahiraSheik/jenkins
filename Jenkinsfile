@@ -11,6 +11,7 @@ pipeline {
                script{
                     sh """
                      echo "building"
+                     exit 1
                     """
                }
             }
@@ -41,6 +42,9 @@ pipeline {
         }
         success {
             echo "pipeline success"
+        }
+        failure {
+            echo "pipeline failure"
         }
     }
 }
