@@ -4,11 +4,11 @@ pipeline {
 
             label 'ROBOSHOP' 
         } 
+    }
 
-        environment {
+     environment {
             COURSE="jenkins"
         }
-    }
     stages {
         stage('Build') {
             steps {
